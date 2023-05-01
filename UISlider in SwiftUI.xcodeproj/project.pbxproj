@@ -11,6 +11,7 @@
 		3ADCD95C29FFBE8700BF07F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADCD95B29FFBE8700BF07F9 /* ContentView.swift */; };
 		3ADCD95E29FFBE8800BF07F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADCD95D29FFBE8800BF07F9 /* Assets.xcassets */; };
 		3ADCD96129FFBE8800BF07F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADCD96029FFBE8800BF07F9 /* Preview Assets.xcassets */; };
+		3ADCD96829FFC26400BF07F9 /* UIsliderViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADCD96729FFC26400BF07F9 /* UIsliderViewRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3ADCD95B29FFBE8700BF07F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3ADCD95D29FFBE8800BF07F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ADCD96029FFBE8800BF07F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3ADCD96729FFC26400BF07F9 /* UIsliderViewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIsliderViewRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3ADCD95929FFBE8700BF07F9 /* UISlider_in_SwiftUIApp.swift */,
 				3ADCD95B29FFBE8700BF07F9 /* ContentView.swift */,
+				3ADCD96729FFC26400BF07F9 /* UIsliderViewRepresentation.swift */,
 				3ADCD95D29FFBE8800BF07F9 /* Assets.xcassets */,
 				3ADCD95F29FFBE8800BF07F9 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADCD96829FFC26400BF07F9 /* UIsliderViewRepresentation.swift in Sources */,
 				3ADCD95C29FFBE8700BF07F9 /* ContentView.swift in Sources */,
 				3ADCD95A29FFBE8700BF07F9 /* UISlider_in_SwiftUIApp.swift in Sources */,
 			);
