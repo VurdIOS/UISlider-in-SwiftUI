@@ -21,7 +21,7 @@ struct UIsliderViewRepresentation: UIViewRepresentable {
         slider.thumbTintColor = convertInColor(tintopacity)
         slider.addTarget(
         context.coordinator,
-        action: #selector(Coordinator.changesliderValue),
+        action: #selector(Coordinator.changeSliderValue),
         for: .valueChanged
         )
         return slider
@@ -38,7 +38,7 @@ struct UIsliderViewRepresentation: UIViewRepresentable {
                 blue: 0,
                 alpha: CGFloat(opacity)
             )
-        ) 
+        )
     }
     
     func makeCoordinator() -> Coordinator {
@@ -61,7 +61,7 @@ extension UIsliderViewRepresentation {
         init(sliderValue: Binding<Double>) {
             self._sliderValue = sliderValue
         }
-        @objc func changesliderValue(sender: UISlider) {
+        @objc func changeSliderValue(sender: UISlider) {
             sliderValue = Double(sender.value)
         }
     }
