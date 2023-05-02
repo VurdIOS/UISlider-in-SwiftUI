@@ -20,8 +20,7 @@ struct ContentView: View {
                 Text("0")
                 UIsliderViewRepresentation(
                     currentValue: $currentValue,
-                    targetValue: targetValue,
-                    tintopacity: tintOpacity()
+                    tintOpacity: (Double(computeScore()) / 100)
                 )
                 Text("100")
             }
@@ -34,11 +33,6 @@ struct ContentView: View {
                 targetValue = Int.random(in: 1...100)
             }
         }.padding()
-    }
-    
-    private func tintOpacity() -> Double {
-        let difference = abs(Double(targetValue) - currentValue)
-        return (100 - difference) / 100
     }
     
     private func computeScore() -> Int {

@@ -10,24 +10,22 @@ import SwiftUI
 struct UIsliderViewRepresentation: UIViewRepresentable {
     
     @Binding var currentValue: Double
-    let targetValue: Int
-    let tintopacity: Double
+    let tintOpacity: Double
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
         slider.minimumValue = 0
         slider.maximumValue = 100
         slider.value = Float(currentValue)
-        slider.thumbTintColor = convertInColor(tintopacity)
         slider.addTarget(
-        context.coordinator,
-        action: #selector(Coordinator.changeSliderValue),
-        for: .valueChanged
+            context.coordinator,
+            action: #selector(Coordinator.changeSliderValue),
+            for: .valueChanged
         )
         return slider
     }
     func updateUIView(_ uiView: UISlider, context: Context) {
-        uiView.thumbTintColor = convertInColor(tintopacity)
+        uiView.thumbTintColor = convertInColor(tintOpacity)
     }
 
     private func convertInColor(_ opacity: Double) -> UIColor {
@@ -49,7 +47,7 @@ struct UIsliderViewRepresentation: UIViewRepresentable {
 }
 struct UIsliderView_Previews: PreviewProvider {
     static var previews: some View {
-        UIsliderViewRepresentation(currentValue: .constant(20), targetValue: 99, tintopacity: 1)
+        UIsliderViewRepresentation(currentValue: .constant(20), tintOpacity: 1)
     }
     
 }
